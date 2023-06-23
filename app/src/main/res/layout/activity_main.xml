@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SECQURAISE"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+            <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_captured"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Capture Count"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/cap_cnt_val"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:textColor="#2E7D32"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/frequencyCnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Frequency (min)"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    />
+                <EditText
+                    android:id="@+id/freq_cnt_val"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:textColor="#2E7D32"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Connectivity"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/conn_val"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:textColor="#2E7D32"
+                    android:layout_marginLeft="185dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Battery Charging"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/batt_charging_val"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:textColor="#2E7D32"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Battery Charge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/batt_cnt_val"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:textColor="#2E7D32"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Location"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:id="@+id/Loc_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2E7D32"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_to_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manual Data Refresh"
+            android:textStyle="bold"
+            android:backgroundTint="@color/teal_700"
+            android:padding="5dp"
+            android:layout_margin="20dp"
+            android:shadowRadius="25"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

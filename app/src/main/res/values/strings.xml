@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="frequency_label">Frequency: %d minutes</string>
+</resources>
+
